@@ -40,7 +40,7 @@ function Doc() {
       <button onClick={clbtn}>
       <MdDoubleArrow  className='icon'/>
       </button>
-      
+    
       {navb ?
         <div>
       <nav className='nav'>
