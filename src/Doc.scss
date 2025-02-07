@@ -1,0 +1,17 @@
+.icon{
+    font-size: 50px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 110px;
+}
+.nav{
+    margin-left: 1px;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-right: 950px;
+    font-size: 30px;
+    background-color: rgb(160, 65, 65);
+    color: aliceblue;
+}
