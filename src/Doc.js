@@ -14,6 +14,7 @@ import Kpy from './Kpy';
 
 function Doc() {
   const[navb,setNavb]=useState(true)
+  const[log,setLog]=useState(true)
   const[input,setInput]=useState(localStorage.getItem('username'))
   const[password,setPassword] = useState(localStorage.getItem('password'))
   useEffect(() => {
@@ -23,7 +24,9 @@ function Doc() {
   const clbtn= () =>{
    setNavb(!navb)
   }
-    
+  const login =() =>{
+    setLog(!log)
+  }    
   var settings = {
     dots: true,
     infinite: true,
@@ -44,7 +47,14 @@ function Doc() {
       {navb ?
         <div>
       <nav className='nav'>
-      <label>login</label>
+      <label onClick={login}>login </label>
+      {log ?
+      <div>
+      <label>register</label>
+      <label>sign up </label>
+      </div>
+      :null
+      }
       <label>account details</label>
       <label>orders</label>
       <label>settings</label>
